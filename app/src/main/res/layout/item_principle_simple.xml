@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvPrincipleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="원리 이름"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface"/>
+
+        <TextView
+            android:id="@+id/tvPrincipleDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="설명"
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:textColor="?attr/colorOnSurfaceVariant"/>
+
+        <TextView
+            android:id="@+id/tvPrincipleExamples"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="예시"
+            android:textSize="14sp"
+            android:paddingTop="4dp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

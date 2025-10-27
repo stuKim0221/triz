@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvDialogTarget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="적용 대상"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface"
+            android:paddingBottom="16dp"/>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="개선하려는 특성"
+            android:textSize="14sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvDialogImproving"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="무게"
+            android:textSize="18sp"
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="악화되는 특성"
+            android:textSize="14sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvDialogWorsening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="힘"
+            android:textSize="18sp"
+            android:textColor="?attr/colorSecondary"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"/>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="적용한 발명원리"
+            android:textSize="14sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvDialogPrincipleNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1번"
+            android:textSize="20sp"
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvDialogPrincipleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="분할"
+            android:textSize="18sp"
+            android:textColor="?attr/colorOnSurface"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvDialogPrincipleDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="대상을 독립적인 부분으로 나눈다"
+            android:textSize="16sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:paddingBottom="16dp"/>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="생성된 프롬프트"
+            android:textSize="14sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:paddingBottom="8dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="?attr/colorSurfaceContainerHighest">
+
+            <TextView
+                android:id="@+id/tvDialogPrompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="프롬프트 내용"
+                android:textSize="14sp"
+                android:textColor="?attr/colorOnSurface"
+                android:padding="16dp"
+                android:textIsSelectable="true"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:paddingTop="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDialogCopy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="프롬프트 복사"
+                android:layout_marginEnd="8dp"
+                style="@style/Widget.Material3.Button.ElevatedButton"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDialogClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="닫기"
+                style="@style/Widget.Material3.Button.TextButton"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

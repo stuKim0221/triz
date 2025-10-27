@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TRIZ 발명원리 힌트"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#1976D2"
+        android:paddingBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnSearchPrinciples"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="발명원리 검색"
+        android:textSize="18sp"
+        android:minHeight="64dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnViewAllPrinciples"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전체 발명원리 보기"
+        android:textSize="18sp"
+        android:minHeight="64dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnViewParameters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="특성 목록 보기"
+        android:textSize="18sp"
+        android:minHeight="64dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnMyMemos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="내 메모"
+        android:textSize="18sp"
+        android:minHeight="64dp"/>
+
+</LinearLayout>

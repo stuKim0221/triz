@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./gradlew:*)",
+      "Bash(find:*)",
+      "Bash(rm \"C:\\Users\\jsk00\\AndroidStudioProjects\\TRIZ\\app\\src\\main\\java\\com\\example\\triz\\MenuActivity.java\")",
+      "Bash(rm \"C:\\Users\\jsk00\\AndroidStudioProjects\\TRIZ\\app\\src\\main\\res\\layout\\activity_menu.xml\")",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
