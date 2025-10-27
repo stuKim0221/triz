@@ -52,6 +52,16 @@
         android:layout_height="wrap_content"
         android:text="내 메모"
         android:textSize="18sp"
-        android:minHeight="64dp"/>
+        android:minHeight="64dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="앱 정보"
+        android:textSize="18sp"
+        android:minHeight="64dp"
+        style="@style/Widget.Material3.Button.TextButton"/>
 
 </LinearLayout>

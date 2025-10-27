@@ -44,6 +44,10 @@
             android:name=".MemoEditActivity"
             android:exported="false"
             android:parentActivityName=".MemoListActivity" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>
