@@ -3,22 +3,23 @@ plugins {
 }
 
 android {
-    namespace = "com.example.triz"
+    namespace = "com.stukim.triz"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.triz"
+        applicationId = "com.stukim.triz"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
